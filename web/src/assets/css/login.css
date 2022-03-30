@@ -1,0 +1,19 @@
+.login {
+  background: url('../img/login.jpg') no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.login-card {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+}
+.logo {
+  height: 8rem;
+  background: url('../img/logo.png') no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+}

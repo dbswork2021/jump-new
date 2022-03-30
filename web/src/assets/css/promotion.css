@@ -1,0 +1,28 @@
+.promotion {
+  display: flex;
+}
+.imgBox {
+  position: absolute;
+  width: 500px;
+}
+.ant-upload-picture-card-wrapper {
+  display: block;
+  height: 100%;
+}
+.avatar-uploader > .ant-upload-select-picture-card {
+  height: 100%;
+  width: 100%;
+}
+.avatar-uploader > .ant-upload-select-picture-card > .ant-upload {
+  width: 100%;
+}
+
+.code {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.promotion-form {
+  position: absolute;
+  right: 0;
+}
