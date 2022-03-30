@@ -34,6 +34,4 @@ export const StatsSearchApi = (model) => http.post('/stats', model);
 
 export const HomeApi = () => http.get('/stats');
 
-export const CommonImgApi = (model) => http.put('/common', model);
-
 export const CommonDataApi = (model) => http.post('/common', model);

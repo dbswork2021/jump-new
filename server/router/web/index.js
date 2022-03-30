@@ -6,7 +6,6 @@ const common = require('./common');
 const user = require('./user');
 const agent = require('./agent');
 const url = require('./url');
-const promotion = require('./promotion');
 const stats = require('./stats');
 
 const auth = require('../../middleware/auth');
@@ -23,7 +22,6 @@ web.use('/common', common.routes());
 web.use('/user', auth, user.routes());
 web.use('/agent', auth, agent.routes());
 web.use('/url', auth, url.routes());
-web.use('/promotion', auth, promotion.routes());
 web.use('/stats', auth, stats.routes());
 
 module.exports = web;

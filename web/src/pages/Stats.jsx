@@ -83,6 +83,7 @@ const Stats = () => {
           <Table dataSource={tableData}>
             <Column title="代理" key="agent" dataIndex="agent" />
             <Column title="地区" key="city" dataIndex="city" />
+            <Column title="详细" key="city" dataIndex="area" />
             <Column title="系统" key="system" dataIndex="system" />
             <Column title="浏览器" key="broser" dataIndex="broser" />
             <Column title="时间" key="createTime" dataIndex="createTime" />

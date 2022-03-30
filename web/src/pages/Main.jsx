@@ -34,9 +34,6 @@ export default function Main() {
           <Menu.Item key="/admin/agent">
             <Link to="agent">代理中心</Link>
           </Menu.Item>
-          <Menu.Item key="/admin/promotion">
-            <Link to="promotion">宣传设置</Link>
-          </Menu.Item>
           <Menu.Item key="/admin/user">
             <Link to="user">用户中心</Link>
           </Menu.Item>

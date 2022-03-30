@@ -26,8 +26,7 @@ const Agent = () => {
           key: element._id,
           nick: element.urls.map((item) => item.nick),
           urls: element.urls.map((item) => item._id),
-          downurl:
-            'http://' + window.location.host + '/#/download/' + element._id,
+          downurl: 'http://' + window.location.host + '/#/' + element._id,
           createTime: new Date(element.createTime).toLocaleString(),
         });
       });
@@ -127,7 +126,7 @@ const Agent = () => {
             </>
           )}
         />
-        <Column title="下载地址" dataIndex="downurl" key="downurl" />
+        <Column title="地址" dataIndex="downurl" key="downurl" />
         <Column title="时间" dataIndex="createTime" key="createTime" />
         <Column
           title="操作"

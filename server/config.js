@@ -9,5 +9,4 @@ module.exports = {
   },
   code: 'test',
   secret: 'jwtcode',
-  jumpUrl: 'localhost:3000',
 };

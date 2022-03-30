@@ -9,6 +9,7 @@ agent.get('/', async (ctx) => {
     .populate('urls', { nick: 1 })
     .sort({ _id: -1 });
   const urls = await urlSchema.find().select({ nick: 1 });
+
   ctx.body = {
     data,
     urls,

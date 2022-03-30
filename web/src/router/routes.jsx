@@ -4,13 +4,11 @@ import Main from 'pages/Main';
 const Index = lazy(() => import('pages/Index'));
 const Login = lazy(() => import('pages/Login'));
 const Register = lazy(() => import('pages/Register'));
-const Download = lazy(() => import('pages/Download'));
 const Home = lazy(() => import('pages/Home'));
 const User = lazy(() => import('pages/User'));
 const Agent = lazy(() => import('pages/Agent'));
 const Url = lazy(() => import('pages/Url'));
 const Stats = lazy(() => import('pages/Stats'));
-const Promotion = lazy(() => import('pages/Promotion'));
 
 const Routes = () => [
   {
@@ -44,10 +42,6 @@ const Routes = () => [
         element: <Url />,
       },
       {
-        path: 'promotion',
-        element: <Promotion />,
-      },
-      {
         path: 'user',
         element: <User />,
       },
@@ -60,10 +54,6 @@ const Routes = () => [
   {
     path: '/register',
     element: <Register />,
-  },
-  {
-    path: '/download/:id',
-    element: <Download />,
   },
 ];
 
