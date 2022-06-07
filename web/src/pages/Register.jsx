@@ -1,15 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Form, Input, Button } from 'antd';
 import { UserOutlined, LockOutlined, SafetyOutlined } from '@ant-design/icons';
 import 'assets/css/login.css';
 import { RegisterApi } from 'utils/api';
 
 const Register = () => {
+	const navigate = useNavigate()
   const onFinish = (values) => {
     RegisterApi(values).then((res) => {
       console.log(res);
       localStorage.__web_token = res.data.token;
-      window.location.reload();
+			navigate('/')
     });
   };
   return (
